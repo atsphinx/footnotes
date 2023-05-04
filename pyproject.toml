@@ -7,8 +7,7 @@ name = "atsphinx-footnotes"
 authors = [{name = "Kazuya Takei", email = "myself@attakei.net"}]
 license = {file = "LICENSE"}
 classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Development Status :: 7 - Inactive",
+  "Development Status :: 4 - Beta",
   "Framework :: Sphinx",
   "Framework :: Sphinx :: Extension",
   "Intended Audience :: Developers",
