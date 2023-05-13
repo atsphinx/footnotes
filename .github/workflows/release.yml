@@ -78,7 +78,7 @@ jobs:
         with:
           name: Release ${{ github.ref_name }}
           body: |
-            To know update details, please see [Changelog](/atsphinx/footnotes/blob/main/CHANGES.rst)
+            To know update details, please see [Changelog](/CHANGES.rst)
           draft: false
           prerelease: ${{ needs.prepare.outputs.is-prerelease }}
           artifacts: 'dist/*'

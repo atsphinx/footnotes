@@ -10,20 +10,20 @@ insert_final_newline = true
 trim_trailing_whitespace = false
 
 # Windows files
-[*.{vbs,bat}]
+[*.{bat}]
 indent_style = space
 indent_size = 4
 end_of_line = crlf
 charset = sjis
 
 # 2 space indentation
-[*.{yml,js,jsx,ts,tsx,json,rst,html,css,nim,nims,nimble,nimf,md,toml}]
+[*.{yml,js,json,rst,html,css,md,toml}]
 indent_size = 2
 
 # 4 space indentation
-[*.{py,php}]
+[*.{py}]
 indent_size = 4
 
 # Tab indentation (no size specified)
-[Makefile,*.{go,cfg}]
+[Makefile,*.{cfg}]
 indent_style = tab

@@ -21,11 +21,12 @@ classifiers = [
 ]
 readme = "README.rst"
 dependencies = [
-  "Sphinx",
+  "sphinx",
 ]
 dynamic = ["version", "description"]
 
 [project.optional-dependencies]
+doc = []
 test = [
   "pytest ==7.*",
 ]

@@ -45,6 +45,6 @@ jobs:
           architecture: x64
           python-version: '3.11'
       - name: Install dependencies
-        run: pip install .
+        run: pip install '.[doc]'
       - name: Run check
         run: make -C docs linkcheck
