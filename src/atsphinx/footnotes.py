@@ -1,6 +1,7 @@
 """Powered footnotes extension for Sphinx."""
 from docutils import nodes
 from sphinx.application import Sphinx
+from sphinx.locale import _
 
 __version__ = "0.1.1"
 
@@ -12,7 +13,7 @@ def collect_footnotes(app: Sphinx, doctree: nodes.document):
         footnote.parent.remove(footnote)
         footnotes.append(footnote)
     if len(footnotes.children):
-        footnotes.insert(0, nodes.rubric(text="Footnotes"))
+        footnotes.insert(0, nodes.rubric(text=_("Footnotes")))
         doctree.append(footnotes)
 
 
