@@ -2,6 +2,22 @@
 Change logs
 ===========
 
+v0.2.0
+======
+
+:date: 2023-06-01 (JST)
+
+Features
+--------
+
+* Support i18n about rubric text.
+* Support custom rubric text.
+
+Docs
+----
+
+* Default installation is from PyPI.
+
 v0.1.1
 ======
 

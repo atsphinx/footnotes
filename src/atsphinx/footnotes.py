@@ -3,7 +3,7 @@ from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.locale import _
 
-__version__ = "0.1.1"
+__version__ = "0.2.0"
 
 
 def collect_footnotes(app: Sphinx, doctree: nodes.document):
