@@ -32,3 +32,13 @@ def test__colect_footnotes__i18n(app: SphinxTestApp):
     footnotes.collect_footnotes(app, doctree)
     section = list(doctree.findall(nodes.section))[-1]
     assert section.children[0].astext() == "注記"
+
+
+@pytest.mark.sphinx("html", confoverrides={"footnotes_rubric": "脚注"})
+def test__colect_footnotes__custom(app: SphinxTestApp):
+    """Test for i18n translation."""
+    app.builder.read_doc("index")
+    doctree = app.env.get_doctree("index")
+    footnotes.collect_footnotes(app, doctree)
+    section = list(doctree.findall(nodes.section))[-1]
+    assert section.children[0].astext() == "脚注"

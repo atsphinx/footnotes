@@ -18,3 +18,12 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output
 html_theme = "alabaster"
 html_static_path = ["_static"]
+
+
+def setup(app):  # noqa: D103
+    app.add_object_type(
+        "confval",
+        "confval",
+        objname="configuration value",
+        indextemplate="pair: %s; configuration value",
+    )

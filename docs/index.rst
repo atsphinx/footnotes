@@ -44,6 +44,10 @@ When you write footnotes internal document, generated html render footnotes on l
 Configuration
 =============
 
-.. todo:: TBD
+.. confval:: footnotes_rubric
 
-   I am plannging some config values.
+   :Type: ``str | None``
+   :Default: ``None``
+   :Example: ``My footnotes``
+
+   When this is not None values, extension uses it instead of "Footnotes".
