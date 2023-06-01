@@ -14,16 +14,11 @@ It collects footnotes and renders last of document.
 Installation
 ============
 
-.. todo:: Update after upload to PyPI.
-
-Currently, this is not uploaded to PyPI.
-You can install from GitHub directly to use it. [#]_
+Install from PyPI.
 
 .. code-block:: console
 
-   pip install git+https://github.com/atsphinx/footnotes#main
-
-.. [#] If you try latest version, change branch from ``#main`` to ``#BRANCH_NAME``.
+   pip install atsphinx-footnotes
 
 Usage
 =====
