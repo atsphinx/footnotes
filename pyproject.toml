@@ -40,7 +40,7 @@ dev = [
 ]
 doc = []
 test = [
-  "pytest ==7.*",
+  "pytest ==8.*",
 ]
 
 [tool.flit.module]
