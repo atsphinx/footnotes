@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Kazuya Takei
+# This file is distributed under the same license as the atsphinx-footnotes
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: atsphinx-footnotes \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-28 01:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../index.rst:3
+msgid "atsphinx-footnotes"
+msgstr ""
+
+#: ../../index.rst:6
+msgid "Overview"
+msgstr "概要"
+
+#: ../../index.rst:8
+msgid "This is Sphinx extension to improve writing experience with footnotes."
+msgstr "これはSphinxにおける「脚注記法」に関する体験を向上させる拡張です。"
+
+#: ../../index.rst:10
+msgid "It collects footnotes and renders last of document."
+msgstr "ドキュメント内に散らばって記述された脚注を取りまとめて、ドキュメントの末尾に集約します。"
+
+#: ../../index.rst:12
+msgid "Doc is good-example to use it."
+msgstr "このドキュメント自体が一つの例となっています。"
+
+#: ../../index.rst:15
+msgid "Installation"
+msgstr "インストール"
+
+#: ../../index.rst:17
+msgid "Install from PyPI."
+msgstr "PyPIからインストールできます。"
+
+#: ../../index.rst:24
+msgid "Usage"
+msgstr "利用法"
+
+#: ../../index.rst:26
+msgid "Configure your ``conf.py`` and run build."
+msgstr "``conf.py`` に下記の編集を行い、ビルドを実行してください。"
+
+#: ../../index.rst:35
+msgid ""
+"When you write footnotes internal document, generated html render "
+"footnotes on last of body. [#]_"
+msgstr ""
+"もしドキュメントの途中に脚注が記載されていても、生成されたHTMLでは末尾に出力されます。 [#]_"
+
+#: ../../index.rst:40
+msgid "Please see document source. Footnotes of document are written nearby refs."
+msgstr ""
+"このドキュメントのソースを参照してください。"
+"それぞれの脚注は、参照記号の近くに記述されています。"
+
+#: ../../index.rst:43
+msgid ""
+"If this is not used, every footnotes are rendered at same position of "
+"sources."
+msgstr ""
+"このSphinx拡張を使用しない場合、脚注テキストはソースに記載されている通りの場所に生成されます。"
+
+#: ../../index.rst:47
+msgid "Configuration"
+msgstr "設定"
+
+#: ../../index.rst
+msgid "Type"
+msgstr ""
+
+#: ../../index.rst:51
+msgid "``list[str]``"
+msgstr ""
+
+#: ../../index.rst
+msgid "Default"
+msgstr ""
+
+#: ../../index.rst:52
+msgid "``[\"html\"]``"
+msgstr ""
+
+#: ../../index.rst
+msgid "Example"
+msgstr ""
+
+#: ../../index.rst:53
+msgid "``[\"html\", \"latex\"]``"
+msgstr ""
+
+#: ../../index.rst:55
+msgid "Extension only works when running builder is included this value."
+msgstr "この設定に記述してあるビルダーでのみ動作するようになります。"
+
+#: ../../index.rst:59
+msgid "``str | None``"
+msgstr ""
+
+#: ../../index.rst:60
+msgid "``None``"
+msgstr ""
+
+#: ../../index.rst:61
+msgid "``My footnotes``"
+msgstr ""
+
+#: ../../index.rst:63
+msgid "When this is not None values, extension uses it instead of \"Footnotes\"."
+msgstr "この設定が ``None`` 以外のとき、脚注の開始部分に\"Footnotes\"の代わりに出力します。"
+
