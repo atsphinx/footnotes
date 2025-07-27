@@ -46,6 +46,14 @@ generated html render footnotes on last of body. [#]_
 Configuration
 =============
 
+.. confval:: footnotes_enabled_builders
+
+   :Type: ``list[str]``
+   :Default: ``["html"]``
+   :Example: ``["html", "latex"]``
+
+   Extension only works when running builder is included this value.
+
 .. confval:: footnotes_rubric
 
    :Type: ``str | None``
