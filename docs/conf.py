@@ -26,6 +26,8 @@ html_theme = "alabaster"
 html_static_path = ["_static"]
 
 # -- Options for extensions
+# atsphinx.footnotes
+footnotes_enabled_builders = ["html", "dirhtml", "mini18n-html", "mini18n-dirhtml"]
 # atsphinx.mini18n
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
