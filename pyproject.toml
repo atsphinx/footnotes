@@ -25,14 +25,18 @@ dependencies = [
 ]
 dynamic = ["version", "description"]
 
-[project.optional-dependencies]
+[project.urls]
+Home = "https://github.com/atsphinx/footnotes"
+
+[dependency-groups]
+dev = [
+  {include-group = "doc"},
+  {include-group = "test"},
+]
 doc = []
 test = [
   "pytest ==7.*",
 ]
-
-[project.urls]
-Home = "https://github.com/atsphinx/footnotes"
 
 [tool.flit.module]
 name = "atsphinx.footnotes"
