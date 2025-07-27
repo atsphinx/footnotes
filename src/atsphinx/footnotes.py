@@ -1,8 +1,14 @@
 """Powered footnotes extension for Sphinx."""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from docutils import nodes
-from sphinx.application import Sphinx
 from sphinx.locale import _
+
+if TYPE_CHECKING:
+    from sphinx.application import Sphinx
 
 __version__ = "0.2.0"
 
