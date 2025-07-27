@@ -32,14 +32,16 @@ Home = "https://github.com/atsphinx/footnotes"
 
 [dependency-groups]
 dev = [
-  {include-group = "doc"},
+  {include-group = "docs"},
   {include-group = "test"},
   "doc8>=1.1.2",
   "esbonio>=0.16.5",
   "ruff>=0.12.5",
   "ty>=0.0.1a16",
 ]
-doc = []
+docs = [
+    "atsphinx-mini18n>=0.4.1",
+]
 test = [
   "pytest ==8.*",
 ]

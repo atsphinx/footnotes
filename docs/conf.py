@@ -10,6 +10,7 @@ release = __version__
 # -- General configuration
 extensions = [
     "atsphinx.footnotes",  # If you want to see default behavior, try comment out.
+    "atsphinx.mini18n",
     "sphinx.ext.todo",
 ]
 templates_path = ["_templates"]
@@ -18,6 +19,12 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output
 html_theme = "alabaster"
 html_static_path = ["_static"]
+
+# -- Options for extensions
+# atsphinx.mini18n
+mini18n_default_language = "en"
+mini18n_support_languages = ["en", "ja"]
+mini18n_basepath = "/footnotes/"
 
 
 def setup(app):  # noqa: D103
