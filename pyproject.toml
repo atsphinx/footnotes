@@ -32,6 +32,9 @@ Home = "https://github.com/atsphinx/footnotes"
 dev = [
   {include-group = "doc"},
   {include-group = "test"},
+  "doc8>=1.1.2",
+  "ruff>=0.12.5",
+  "ty>=0.0.1a16",
 ]
 doc = []
 test = [
