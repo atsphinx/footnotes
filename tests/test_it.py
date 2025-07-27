@@ -14,7 +14,7 @@ def test__colect_footnotes__func_only(app: SphinxTestApp):
     doctree = app.env.get_doctree("index")
     assert len(list(doctree.findall(nodes.section))) == 3
     app.config.footnotes_enabled_builders = ["html"]  # type: ignore[invalid-assignment]
-    footnotes.collect_footnotes(app, doctree)
+    footnotes.collect_footnotes(app, doctree, "index")
     assert len(list(doctree.findall(nodes.section))) == 4
 
 
@@ -23,6 +23,8 @@ def test__colect_footnotes__standard(app: SphinxTestApp):
     """Test behavior as extension with default setteings."""
     app.builder.read_doc("index")
     doctree = app.env.get_doctree("index")
+    app.config.footnotes_enabled_builders = ["html"]  # type: ignore[invalid-assignment]
+    footnotes.collect_footnotes(app, doctree, "index")
     assert len(list(doctree.findall(nodes.section))) == 4
 
 
@@ -31,7 +33,8 @@ def test__colect_footnotes__i18n(app: SphinxTestApp):
     """Test for i18n translation."""
     app.builder.read_doc("index")
     doctree = app.env.get_doctree("index")
-    footnotes.collect_footnotes(app, doctree)
+    app.config.footnotes_enabled_builders = ["html"]  # type: ignore[invalid-assignment]
+    footnotes.collect_footnotes(app, doctree, "index")
     section = list(doctree.findall(nodes.section))[-1]
     assert section.children[0].astext() == "注記"
 
@@ -41,7 +44,8 @@ def test__colect_footnotes__custom(app: SphinxTestApp):
     """Test for i18n translation."""
     app.builder.read_doc("index")
     doctree = app.env.get_doctree("index")
-    footnotes.collect_footnotes(app, doctree)
+    app.config.footnotes_enabled_builders = ["html"]  # type: ignore[invalid-assignment]
+    footnotes.collect_footnotes(app, doctree, "index")
     section = list(doctree.findall(nodes.section))[-1]
     assert section.children[0].astext() == "脚注"
 
@@ -51,7 +55,7 @@ def test__disabled_builders(app: SphinxTestApp):
     """Test for i18n translation."""
     app.builder.read_doc("index")
     doctree = app.env.get_doctree("index")
-    footnotes.collect_footnotes(app, doctree)
+    footnotes.collect_footnotes(app, doctree, "index")
     assert len(list(doctree.findall(nodes.section))) == 3
 
 
@@ -60,4 +64,6 @@ def test__enable_by_format(app: SphinxTestApp):
     """Test for i18n translation."""
     app.builder.read_doc("index")
     doctree = app.env.get_doctree("index")
+    app.config.footnotes_enabled_builders = ["html"]  # type: ignore[invalid-assignment]
+    footnotes.collect_footnotes(app, doctree, "index")
     assert len(list(doctree.findall(nodes.section))) == 4

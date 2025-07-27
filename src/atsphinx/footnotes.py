@@ -19,7 +19,7 @@ def is_allowd_collect(app: Sphinx):
     return builder.name in enabled_builders or builder.format in enabled_builders
 
 
-def collect_footnotes(app: Sphinx, doctree: nodes.document):
+def collect_footnotes(app: Sphinx, doctree: nodes.document, docname: str):
     """Collect and display later all footnotes."""
     if not is_allowd_collect(app):
         return
@@ -38,7 +38,7 @@ def collect_footnotes(app: Sphinx, doctree: nodes.document):
 def setup(app: Sphinx):  # noqa: D103
     app.add_config_value("footnotes_rubric", None, "env", [str, None])
     app.add_config_value("footnotes_enabled_builders", ["html"], "env", [list])
-    app.connect("doctree-read", collect_footnotes)
+    app.connect("doctree-resolved", collect_footnotes)
     return {
         "version": __version__,
         "env_version": 1,
