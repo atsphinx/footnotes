@@ -1,0 +1,48 @@
+current_version = "0.2.0"
+
+[[files]]
+path = "src/atsphinx/footnotes.py"
+
+search = "__version__ = \"{{current_version}}\""
+replace = "__version__ = \"{{new_version}}\""
+
+
+[[files]]
+path = "CHANGES.rst"
+
+search = """
+v{{current_version}}
+={{#sameLengthChars}}=@{{current_version}}{{/sameLengthChars}}
+"""
+replace = """
+v{{new_version}}
+={{#sameLengthChars}}=@{{new_version}}{{/sameLengthChars}}
+
+:date: {{ nowFormat.dateISO }} (Asia/Tokyo)
+
+Breaking changes
+----------------
+
+Features
+--------
+
+Fixes
+-----
+
+Others
+------
+
+v{{current_version}}
+={{#sameLengthChars}}=@{{current_version}}{{/sameLengthChars}}
+"""
+
+
+[[files]]
+path = ".github/release-body.md"
+search = "Release atsphinx-footnotes v{{ current_version }}"
+replace = "Release atsphinx-footnotes v{{ new_version }}"
+
+[[files]]
+path = ".github/release-body.md"
+search = "- Changelog is https://github.com/atsphinx/footnotes/blob/v{{ current_version }}/CHANGES.rst"
+replace = "- Changelog is https://github.com/atsphinx/footnotes/blob/v{{ new_version }}/CHANGES.rst"
