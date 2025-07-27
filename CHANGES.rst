@@ -2,6 +2,25 @@
 Change logs
 ===========
 
+v0.3.0
+======
+
+:date: 2025-07-28 (Asia/Tokyo)
+
+Features
+--------
+
+* Add config ``footnotes_enabled_builders``.
+  This is to control running collecting function by builder name or format.
+  Default value is 'html'.
+
+Others
+------
+
+* Drop Python 3.7 from supported versions.
+* Add Python 3.12 and 3.13 to supported versions.
+* Update workspace.
+
 v0.2.0
 ======
 
