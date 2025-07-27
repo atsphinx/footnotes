@@ -1,4 +1,5 @@
 """Configuration for pytest."""
+
 import pytest
 from sphinx.testing.path import path
 

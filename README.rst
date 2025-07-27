@@ -7,7 +7,8 @@ Powered footnote tools for Sphinx.
 Example
 =======
 
-When using standard reST, you must write footnotes into last of source to render into last of document.
+When using standard reStructuredText,
+you must write footnotes into last of source to render into last of document.
 
 .. code:: rst
 

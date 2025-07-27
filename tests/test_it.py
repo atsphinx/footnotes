@@ -1,4 +1,5 @@
 """Standard tests."""
+
 import pytest
 from docutils import nodes
 from sphinx.testing.util import SphinxTestApp

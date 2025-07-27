@@ -1,4 +1,5 @@
 """Powered footnotes extension for Sphinx."""
+
 from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.locale import _

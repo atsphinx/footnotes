@@ -32,14 +32,16 @@ Configure your ``conf.py`` and run build.
        "atsphinx.footnotes",
    ]
 
-When you write footnotes internal document, generated html render footnotes on last of body. [#]_
+When you write footnotes internal document,
+generated html render footnotes on last of body. [#]_
 
 .. hint::
 
    Please see document source.
    Footnotes of document are written nearby refs.
 
-.. [#] If this is not used, every footnotes are rendered at same position of sources.
+.. [#] If this is not used,
+   every footnotes are rendered at same position of sources.
 
 Configuration
 =============
