@@ -2,6 +2,24 @@
 Change logs
 ===========
 
+v0.3.1
+======
+
+:date: 2025-07-28 (Asia/Tokyo)
+
+Fixes
+-----
+
+- Change time when it edit doctree.
+
+Others
+------
+
+- Document changes theme.
+- Document supports i18n.
+
+  - Add Japanese.
+
 v0.3.0
 ======
 

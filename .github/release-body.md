@@ -1,3 +1,3 @@
-Release atsphinx-footnotes v0.3.0
+Release atsphinx-footnotes v0.3.1
 
-- Changelog is https://github.com/atsphinx/footnotes/blob/v0.3.0/CHANGES.rst
+- Changelog is https://github.com/atsphinx/footnotes/blob/v0.3.1/CHANGES.rst
