@@ -5,6 +5,8 @@
     "github>attakei/workspace-configs//renovate/lefthook",
     "github>attakei/workspace-configs//renovate/taskfile",
   ],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["* 9-15 * * 0,6"],
   "automerge": true,
   "packageRules": [
     // NOTE: Workflow's python version must be kept because it is minimum require-python version.

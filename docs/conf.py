@@ -1,5 +1,6 @@
 # noqa: D100
 from atsphinx.mini18n import get_template_dir as get_mini18n_template_dir
+
 from atsphinx.footnotes import __version__
 
 # -- Project information
@@ -13,6 +14,7 @@ extensions = [
     "atsphinx.footnotes",  # If you want to see default behavior, try comment out.
     "atsphinx.mini18n",
     "sphinx.ext.todo",
+    "sphinx_toolbox.confval",
 ]
 templates_path = ["_templates", get_mini18n_template_dir()]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -60,12 +62,3 @@ footnotes_enabled_builders = ["html", "dirhtml", "mini18n-html", "mini18n-dirhtm
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
 mini18n_basepath = "/footnotes/"
-
-
-def setup(app):  # noqa: D103
-    app.add_object_type(
-        "confval",
-        "confval",
-        objname="configuration value",
-        indextemplate="pair: %s; configuration value",
-    )

@@ -6,7 +6,6 @@ path = "src/atsphinx/footnotes.py"
 search = "__version__ = \"{{current_version}}\""
 replace = "__version__ = \"{{new_version}}\""
 
-
 [[files]]
 path = "CHANGES.rst"
 
@@ -35,7 +34,6 @@ Others
 v{{current_version}}
 ={{#sameLengthChars}}=@{{current_version}}{{/sameLengthChars}}
 """
-
 
 [[files]]
 path = ".github/release-body.md"
