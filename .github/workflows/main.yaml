@@ -9,7 +9,7 @@ on:
   pull_request:
   workflow_dispatch:
   schedule:
-    - cron: '0 9 * * 5'  # 18:00 on Friday Asia/Tokyo
+    - cron: '0 9 * * 5' # 18:00 on Friday Asia/Tokyo
 
 env:
   UV_NO_SYNC: 1
@@ -35,7 +35,6 @@ jobs:
       max-parallel: 4
       matrix:
         python-version:
-          - '3.8'
           - '3.9'
           - '3.10'
           - '3.11'
