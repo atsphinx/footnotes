@@ -43,6 +43,7 @@ docs = [
     "atsphinx-mini18n>=0.4.1",
     "furo>=2024.8.6",
     "sphinx-intl>=2.2.0",
+    "sphinx-toolbox>=4.0.0",
 ]
 test = [
   "pytest ==8.*",
