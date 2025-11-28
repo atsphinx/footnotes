@@ -2,6 +2,19 @@
 Change logs
 ===========
 
+v0.3.2
+======
+
+:date: 2025-11-29 (Asia/Tokyo)
+
+Others
+------
+
+* It requires Python 3.9 or later since this version.
+* Add 3.8 from supported versions.
+* Add 3.14 to supported versions.
+* Add type stub.
+
 v0.3.1
 ======
 

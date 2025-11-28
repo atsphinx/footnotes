@@ -10,7 +10,7 @@ from sphinx.locale import _
 if TYPE_CHECKING:
     from sphinx.application import Sphinx
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
 
 
 def is_allowd_collect(app: Sphinx):
